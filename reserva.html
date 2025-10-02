@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantina Chichilo</title>
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/reserva.css">
+    <script src="https://kit.fontawesome.com/98849dbdbd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <img src="./assets/img/Logo.png" alt="logo" class="logo" width="250">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="nosotros.html">NOSOTROS </a></li>
+                <li><a href="reserva.html">RESERVA</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Reserva</h1>
+        <div>
+            <section>
+                <p>Las Mesas son reservadas de forma semanal</p>
+             <p>
+                 
+               <form>
+                   <div class="Formulario-reserva">
+                       <label for="nombre">Nombre:</label>
+                       <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="Formulario-reserva">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+
+                    <div class="Formulario-reserva">
+                        <label for="comensales">Comensales:</label>
+                        <input type="number" id="comensales" name="comensales" min="1" max="10">
+                    </div>
+
+                    <div class="Formulario-reserva">
+                        <label for="horario">Horario:</label>
+                        <select id="horario" name="horario" required>
+                            <option value="">Hora</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
+                    </div>
+
+                    <div class="Formulario-reserva">
+                        <label>Día de la semana:</label>
+                        
+                        <div class="radio-options">
+                            <label>
+                                <input type="radio" name="dia" value="Jueves" required>
+                                Jueves
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="dia" value="Viernes">
+                                Viernes
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="dia" value="Sábado">
+                                Sábado
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="dia" value="Domingo">
+                                Domingo
+                            </label>
+                        </div>
+                    </div>
+
+                    <input type="submit" value="Reservar">
+                </form>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="barra-inferior">
+            <ul class="pie-pagina">
+                <li>Restaurante Italiano</li>
+                <li><i class="fa-solid fa-location-dot"></i>   Camarones 1901 - CABA</li>
+                <li><i class="fa-solid fa-phone"></i>   45007007 - 45007006 </li>
+                <li><i class="fa-solid fa-envelope"></i>   <a href="mailto:cantinaitaliana@cantinachichilo.com.ar">cantinaitaliana@cantinachichilo.com.ar</a></li>
+            </ul>
+            <ul class="nav-inferior">
+                <li>Cantina Chichilo</li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+       
+            <ul class="icono-inferior">
+                <li><a href="https://wa.me/05401145841263" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.facebook.com/share/1GToizquXY/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/cantinachichilook?igsh=dGZvcXp1cDJjdW5k" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

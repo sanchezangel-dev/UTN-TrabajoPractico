@@ -1,0 +1,102 @@
+
+/* Estilo para header de todas las paginas*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+    text-decoration: none
+}
+
+
+header {
+    background-color: #e9190a;
+    
+}
+
+nav a:hover{
+    color: yellow;
+    font-weight: 1000;
+}
+nav{
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    padding: 20px 5%;
+    align-items: center;
+    color: white
+}
+
+header ul {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder ;
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0; 
+    }
+
+    header ul {
+        flex-direction: column; 
+        align-items: center; 
+        width: 100%;
+        padding-top: 15px; 
+        gap: 10px; 
+    }
+}
+
+
+
+/* Estilo para footer de todas las paginas*/
+footer {
+    background-color: #e9190a;
+    padding: 48px 5%;
+    color: white;
+    
+}
+
+footer a{
+     font-weight: 1000;
+}
+
+footer a:hover{
+    color:black;
+   
+}
+
+footer li:first-child{
+    font-weight: bold;
+}
+
+.pie-pagina, .nav-inferior{
+    line-height: 2;
+    list-style: none;
+    color:rgb(254, 254, 254);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+.icono-inferior{
+    display: flex;
+    list-style: none;
+    font-size: 32px;
+    gap: 32px;
+}
+
+
+.barra-inferior{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items:flex-start ;
+}
