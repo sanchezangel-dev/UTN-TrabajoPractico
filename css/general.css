@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+.menu-toggle, .menu-icon {
+    display: none;
+}
+
+body {
+    background-color: #F5EFE7;   
+}
+
+
 a{
     color: white;
     text-decoration: none
@@ -40,18 +49,58 @@ header ul {
 
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
         height: auto;
-        padding: 20px 0; 
+        padding: 15px 5%; 
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block; 
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        position: relative;
+    }
+
+    .nav-line {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+        transition: all 0.3s ease;
     }
 
     header ul {
-        flex-direction: column; 
-        align-items: center; 
+        /* Posicionamos la lista para que ocupe todo el ancho bajo la cabecera */
+        position: absolute;
+        top: 100px; /* Ajusta según la altura de tu header */
+        left: 0;
         width: 100%;
-        padding-top: 15px; 
-        gap: 10px; 
+        background-color: #e9190a; /* Mismo fondo que el header */
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px 0;
+        
+        /* HACER QUE DESAPAREZCA POR DEFECTO (EL TRUCO) */
+        display: none; 
+        /* Opcional: Para una animación, puedes usar transform: translateX(-100%); */
+        /* transition: transform 0.3s ease; */
     }
+
+    .menu-toggle:checked ~ ul {
+        display: flex; /* Mostrar el menú */
+        /* Si usaste transform:
+        transform: translateX(0);
+        */
+    }
+
+
 }
 
 
@@ -59,7 +108,7 @@ header ul {
 /* Estilo para footer de todas las paginas*/
 footer {
     background-color: #e9190a;
-    padding: 48px 5%;
+    padding: 32px 48px;
     color: white;
     
 }
@@ -73,8 +122,17 @@ footer a:hover{
    
 }
 
-footer li:first-child{
+footer  li:first-child{
     font-weight: bold;
+   
+}
+
+footer .pie-pagina li:first-child{
+   font-size: 16px;
+}
+
+footer .nav-inferior li:first-child{
+    font-size: 16px;
 }
 
 .pie-pagina, .nav-inferior{
@@ -82,7 +140,8 @@ footer li:first-child{
     list-style: none;
     color:rgb(254, 254, 254);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    padding-bottom: 24px;
 }
 
 .icono-inferior{
@@ -90,6 +149,7 @@ footer li:first-child{
     list-style: none;
     font-size: 32px;
     gap: 32px;
+    padding-bottom: 24px;
 }
 
 
@@ -99,4 +159,43 @@ footer li:first-child{
     align-content: center;
     justify-content: space-between;
     align-items:flex-start ;
+}
+
+.derechos-reservados {
+    border-top: 1px solid white;
+    padding-top: 20px; 
+    padding-bottom: 20px;
+    text-align: center;
+    color:rgb(254, 254, 254);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    
+}
+
+
+.derechos-reservados ul{
+    list-style: none;
+}
+
+
+@media (max-width: 768px) {
+    
+    .barra-inferior {
+        flex-wrap: wrap; 
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .icono-inferior {
+        order: 10; 
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .pie-pagina, .nav-inferior {
+        padding-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
 }

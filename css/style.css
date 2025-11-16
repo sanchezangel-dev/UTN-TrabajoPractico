@@ -6,17 +6,20 @@ body {
 
 main{
     background-color: #F5EFE7;
-    padding: 48px 32px 48px 32px;
+   
 }
 
 .Titulo-1 {
     text-align: center;
     font-family: 'roboto', serif;
     font-weight: bold;
+    padding-top: 32px;
 }
 
 .Titulo-2 {
     text-align: center;
+    padding-bottom: 32px;
+    
 }
 
 .portada {
@@ -25,12 +28,11 @@ main{
 
 .descripcion, .imagen-inicio {
     text-align: center;
-    padding: 24px 0px 8px 0px;
+    
 }
     
 .descripcion {
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 32px 48px;
     text-align: left;
     line-height: 1.5;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -40,153 +42,20 @@ main{
     margin-bottom: 24px;
 }
 
-
-
-
-
-
-
-/*Estilo para la pagina CONTACTO*/
-
-ul{
-    list-style: none;
-}
-
-.titulo-contacto{
-    text-align: center;
-}
-
-.cuerpo-contacto li:first-child{
-    font-weight: bold;
-}
-
-.ubicacion-contacto , .horarios-contacto{
-    background-color: #E8D5C5; 
-    flex-grow: 1;
-    flex-basis: 45%;
-    align-content: center;
-    text-align: center;
-}
-
-.ubicacion-contacto{
-    padding: 24px 56px 24px 56px;
-}
-
-.horarios-contacto{
-    padding: 24px 96px 24px 96px;
-    line-height: 1.5;
-}
-
-.horarios-contacto ul{
-    margin-bottom: 20px; 
-}
-
-.div-contacto{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-between;
-    padding: 24px 24px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 18px ;
-}
-
-.goglemap{
-    border-radius: 16px;
-    width: 100%;
-    height: 352px;
-   
-}
-
 @media (max-width: 800px) {
-    .div-contacto {
-        flex-direction: column; 
-        align-items: center; 
+    .main {
+        padding: auto;
     }
 
-    .ubicacion-contacto, .horarios-contacto {
+    .imagen-inicio {
         width: 95%;
         flex-basis: auto; 
         margin-bottom: 20px; 
     }
 
-    .horarios-contacto, .ubicacion-contacto {
-        text-align: center;
-    }
 }
 
 
 
 
 
-
-/*Estilo para la pagina MENÚ*/
-
-.caja-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 40px auto; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.imagencard {
-    background-color:white; 
-    border-radius: 16px; 
-    overflow: hidden;
-    text-align: center;
-}
-
-.imagencard:hover {
-    box-shadow: 0 8px 16px grey; 
-}
-
-.imagen {
-    width: 100%;
-    height: 224px; 
-    object-fit: cover; 
-    display: block; 
-}
-
-.detalle {
-    padding: 16px 16px 24px;
-    text-align: left; 
-}
-
-.titulo-card {
-    color: black;
-    margin: 0 0 5px 0;
-    font-weight: 700;
-}
-
-.titulo-menu{
-    text-align: center;
-}
-
-
-
-/*Estilo para la pagina NOSOTROS*/
-
-.titulo-nosotros{
-    text-align: center;
-}
-
-.nosotros-galeria {
-    display: grid;
-   
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    gap: 15px; 
-    padding: 24px;
-    max-width: 1200px;
-    margin: 0 auto; 
-}
-
-
-.nosotros-foto img {
-    width: 100%; 
-    height: 200px;
-    object-fit: cover; 
-    border-radius: 16px; 
-}

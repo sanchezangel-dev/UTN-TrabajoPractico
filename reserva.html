@@ -10,10 +10,17 @@
     <script src="https://kit.fontawesome.com/98849dbdbd.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <header>
         <nav>
             <img src="./assets/img/Logo.png" alt="logo" class="logo" width="250">
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+            </label>
+
             <ul>
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="nosotros.html">NOSOTROS </a></li>
@@ -26,41 +33,27 @@
     
     <main>
         <h1>Reserva</h1>
-        <div>
+            <div class="fondo-reserva" >
             <section>
                 <p>Las Mesas son reservadas de forma semanal</p>
-             <p>
-                 
-               <form>
-                   <div class="Formulario-reserva">
-                       <label for="nombre">Nombre:</label>
-                       <input type="text" id="nombre" name="nombre" required>
+                <form>
+                    <div class="Formulario-reserva">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
                     </div>
                     
                     <div class="Formulario-reserva">
                         <label for="telefono">Teléfono:</label>
                         <input type="tel" id="telefono" name="telefono" required>
                     </div>
-
+                    
+                    
                     <div class="Formulario-reserva">
                         <label for="comensales">Comensales:</label>
                         <input type="number" id="comensales" name="comensales" min="1" max="10">
                     </div>
 
-                    <div class="Formulario-reserva">
-                        <label for="horario">Horario:</label>
-                        <select id="horario" name="horario" required>
-                            <option value="">Hora</option>
-                            <option value="20:30">20:30</option>
-                            <option value="21:00">21:00</option>
-                            <option value="21:30">21:30</option>
-                            <option value="22:00">22:00</option>
-                            <option value="22:30">22:30</option>
-                            <option value="23:00">23:00</option>
-                            <option value="23:30">23:30</option>
-                        </select>
-                    </div>
-
+                    
                     <div class="Formulario-reserva">
                         <label>Día de la semana:</label>
                         
@@ -86,11 +79,25 @@
                             </label>
                         </div>
                     </div>
+                    
+                    <div class="Formulario-reserva">
+                        <label for="horario">Horario:</label>
+                        <select id="horario" name="horario" required>
+                            <option value="">Hora</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
+                    </div>
 
-                    <input type="submit" value="Reservar">
+                    <input class="bot-rev" type="submit" value="Reservar">
                 </form>
             </section>
-        </div>
+            </div>
     </main>
     
     <footer>
@@ -113,6 +120,11 @@
                 <li><a href="https://wa.me/05401145841263" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                 <li><a href="https://www.facebook.com/share/1GToizquXY/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/cantinachichilook?igsh=dGZvcXp1cDJjdW5k" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="derechos-reservados">
+            <ul class="Copyright">
+                <li>2025 - Copyright © - Aesp</li>
             </ul>
         </div>
     </footer>

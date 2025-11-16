@@ -7,13 +7,23 @@
     <title>Cantina Chichilo</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacto.css">
     <script src="https://kit.fontawesome.com/98849dbdbd.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
    
     <header>
         <nav>
             <img src="./assets/img/Logo.png" alt="logo" class="logo" width="250">
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+                <span class="nav-line"></span>
+            </label>
+
             <ul>
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="nosotros.html">NOSOTROS </a></li>
@@ -27,7 +37,35 @@
     <main class="cuerpo-contacto">
         <h1 class="titulo-contacto">Contacto</h1>
         <div class="div-contacto"> 
-            <section class="horarios-contacto"> 
+            <div class="mensaje-contacto"> 
+                <p>Escribenos</p>
+                <form>
+                    <div class="formulario-contacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="formulario-contacto">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="formulario-contacto">
+                        <label for="mail">Mail:</label>
+                        <input type="text" id="mail" name="mail" required>
+                    </div>
+                    <div class="formulario-contacto">
+                        <label for="mensaje">Su Mensaje:</label>
+                        <textarea name="mensajet" id="mensajet"  required></textarea>
+                    </div>
+                    <input class="bot-cont" type="submit" value="Enviar">
+                </form>
+            </div>
+            <div class="ubicacion-contacto">
+                <ul>
+                    <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.923715500671!2d-58.4707983252127!3d-34.606090457621846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9fe985d5f3f%3A0xcde55529e7bdc599!2sCantina%20Chichilo%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1759274549161!5m2!1ses-419!2sar" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="goglemap"></iframe></li>
+                    <li>Camarones 1901, La Paternal, CABA</li>
+                </ul>
+            </div>
+            <div class="horarios-contacto"> 
                     <ul>
                         <li>Nuestros Horarios</li>
                         <li>Jueves,Viernes y Sabados</li>
@@ -38,22 +76,15 @@
                     <ul>
                         <li>Telefono</li>
                         <li>45007007 - 45007006</li>
-                        <li>cantinaitaliana@cantinachichilo.com.ar</li>
                     </ul>
                     <ul>
                         <li>Mail</li>
                         <li>cantinaitaliana@cantinachichilo.com.ar</li>
                     </ul>
-            </section>
-            <section class="ubicacion-contacto">
-            <ul>
-                <li><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.923715500671!2d-58.4707983252127!3d-34.606090457621846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9fe985d5f3f%3A0xcde55529e7bdc599!2sCantina%20Chichilo%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1759274549161!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="goglemap"></iframe></li>
-                <li>Camarones 1901, La Paternal, CABA</li>
-            </ul>
-           </section>
-
+            </div>
+            
         </div>
-
+        
     </main>
     
     <footer>
@@ -76,6 +107,11 @@
                 <li><a href="https://wa.me/05401145841263" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
                 <li><a href="https://www.facebook.com/share/1GToizquXY/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href="https://www.instagram.com/cantinachichilook?igsh=dGZvcXp1cDJjdW5k" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+        <div class="derechos-reservados">
+            <ul>
+                <li>2025 - Copyright © - Aesp</li>
             </ul>
         </div>
     </footer>

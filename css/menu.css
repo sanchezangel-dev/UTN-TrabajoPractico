@@ -1,0 +1,48 @@
+/*Estilo para la pagina MENÚ*/
+
+.caja-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imagencard {
+    background-color:white; 
+    border-radius: 16px; 
+    overflow: hidden;
+    text-align: center;
+}
+
+.imagencard:hover {
+    box-shadow: 0 8px 16px grey; 
+    transform: translateY(-10px);
+}
+
+.imagen {
+    width: 100%;
+    height: 224px; 
+    object-fit: cover; 
+    display: block; 
+}
+
+.detalle {
+    padding: 16px 16px 24px;
+    text-align: left; 
+}
+
+.titulo-card {
+    color: black;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+}
+
+.titulo-menu{
+    text-align: center;
+    padding-top: 32px;
+}
+
+

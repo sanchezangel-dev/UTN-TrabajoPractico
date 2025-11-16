@@ -1,0 +1,24 @@
+/*Estilo para la pagina NOSOTROS*/
+
+.titulo-nosotros{
+    text-align: center;
+    padding: 32px;
+}
+
+.nosotros-galeria {
+    display: grid;
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 15px; 
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+
+.nosotros-foto img {
+    width: 100%; 
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 16px; 
+}
